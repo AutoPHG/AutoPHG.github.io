@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoPHG — Roblox, Shorts & Chaos</title>
+<meta name="description" content="AutoPHG ครีเอเตอร์สาย Roblox — Shorts, แอนิเมชัน และข่าววงการ Roblox ภาษาไทย ส่วนหนึ่งของกลุ่ม TAC">
+<meta property="og:title" content="AutoPHG — Roblox, Shorts & Chaos">
+<meta property="og:description" content="ครีเอเตอร์สาย Roblox · 45K+ ผู้ติดตาม · สมาชิกกลุ่ม TAC">
+<meta property="og:image" content="media/video/reel-poster.jpg">
+<meta name="theme-color" content="#07040f">
+<link rel="icon" href="media/img/star-red.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,400;0,600;0,800;1,800;1,900&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+<!-- ============ INTRO ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__grid"></div>
+  <div class="intro__word">
+    <span class="intro__l" style="--i:0">A</span><span class="intro__l" style="--i:1">U</span><span class="intro__l" style="--i:2">T</span><span class="intro__l" style="--i:3">O</span><span class="intro__l intro__l--hot" style="--i:4">P</span><span class="intro__l intro__l--hot" style="--i:5">H</span><span class="intro__l intro__l--hot" style="--i:6">G</span>
+  </div>
+  <img class="intro__bolt" src="media/img/bolt-red.webp" alt="">
+  <div class="intro__count mono"><span id="introPct">00</span>%</div>
+  <button class="intro__skip mono" id="introSkip" type="button">SKIP →</button>
+</div>
+
+<canvas id="sparks" class="sparks" aria-hidden="true"></canvas>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__logo">AUTO<b>PHG</b></a>
+  <nav class="nav__links" aria-label="หลัก">
+    <a href="#story">STORY</a>
+    <a href="#reel">REEL</a>
+    <a href="#work">WORK</a>
+    <a href="#tac">TAC</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <a href="#contact" class="pill">ติดต่องาน <span>↗</span></a>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <video class="hero__video" src="media/video/reel.mp4" poster="media/video/reel-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+  <div class="hero__shade"></div>
+  <div class="hero__grid"></div>
+
+  <img class="deco deco--bolt-hero" src="media/img/bolt-red.webp" alt="">
+  <img class="deco deco--star1 float" src="media/img/star-orange.webp" alt="">
+  <img class="deco deco--star2 float" src="media/img/star-purple.webp" alt="">
+  <img class="deco deco--star3 float" src="media/img/star-red.webp" alt="">
+
+  <h1 class="hero__title" aria-label="AutoPHG">
+    <span class="hero__row">AUTO</span>
+    <span class="hero__row hero__row--hot">PHG<i>.</i></span>
+  </h1>
+  <span class="hero__sig" aria-hidden="true">AutoPHG</span>
+
+  <div class="hero__foot">
+    <div class="hero__intro">
+      <p class="hero__hello">สวัสดีครับ ผม <b>AutoPHG</b></p>
+      <p class="hero__sub">ครีเอเตอร์สาย Roblox ที่ทำทั้ง Shorts, แอนิเมชัน และข่าววงการ — แบบที่ดูแล้วต้องกดดูต่อ</p>
+      <span class="tag mono"><i class="dot"></i> 45K+ SUBSCRIBERS</span>
+    </div>
+    <div class="hero__motto">
+      <span class="mono label">MOTTO</span>
+      <p>Play hard.<br><em>Post harder.</em></p>
+    </div>
+    <div class="hero__side">
+      <button class="ghost mono" id="replayIntro" type="button">↺ ดูอินโทรอีกครั้ง</button>
+      <span class="mono scroll">SCROLL <b>↓</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="story__bg" style="background-image:url(media/img/bg-night.webp)"></div>
+  <div class="wrap">
+    <span class="kicker mono">01 — WHO</span>
+    <h2 class="story__big">
+      <span class="sw">I</span> <span class="sw">PLAY.</span><br>
+      <span class="sw">I</span> <span class="sw">CUT.</span><br>
+      <span class="sw hot">I</span> <span class="sw hot">POST.</span>
+    </h2>
+    <p class="story__lead reveal">
+      ผมเริ่มจากการเล่นเกมแล้วอัดคลิปเก็บไว้เอง วันนี้ช่องมีคลิปมากกว่า <b>500</b> คลิป
+      ทั้งรีวิวอัปเดต ไล่ล่าผีตอนตีสอง ไปจนถึงเปิดโปรแกรม Moon Animator สอนทำแอนิเมชันทีละเฟรม
+    </p>
+    <div class="pillars">
+      <article class="pillar reveal">
+        <img src="media/img/star-red.webp" alt="" class="pillar__star">
+        <span class="mono">A</span>
+        <h3>Roblox Shorts</h3>
+        <p>มุก เกมผี และคนดังมาเล่น Roblox ตัดให้จบใน 60 วินาที</p>
+      </article>
+      <article class="pillar reveal">
+        <img src="media/img/star-orange.webp" alt="" class="pillar__star">
+        <span class="mono">B</span>
+        <h3>Animation</h3>
+        <p>แอนิเมชัน Roblox ด้วย Moon Animator และสอนทำแบบเข้าใจง่าย</p>
+      </article>
+      <article class="pillar reveal">
+        <img src="media/img/star-purple.webp" alt="" class="pillar__star">
+        <span class="mono">C</span>
+        <h3>News & Takes</h3>
+        <p>ข่าววงการ Roblox อัปเดตเกม และความเห็นแบบตรง ๆ</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" id="numbers">
+  <div class="wrap numbers__inner">
+    <div class="stat reveal">
+      <b class="count" data-to="45.8" data-dec="1" data-suffix="K">0</b>
+      <span>ผู้ติดตามบน YouTube</span>
+    </div>
+    <div class="stat reveal">
+      <b class="count" data-to="521">0</b>
+      <span>คลิปบนช่อง</span>
+    </div>
+    <div class="stat stat--hot reveal">
+      <b class="count" data-to="437" data-suffix="K">0</b>
+      <span>วิวคลิปที่ดังที่สุด</span>
+    </div>
+  </div>
+  <p class="numbers__quote wrap reveal">"ถ้าคลิปแรกยังไม่ปัง <span class="hl">คลิปที่ 521</span> ก็ยังมีโอกาส"</p>
+</section>
+
+<!-- ============ REEL ============ -->
+<section class="reel" id="reel">
+  <div class="collage" aria-hidden="true" id="collage"></div>
+  <div class="reel__center">
+    <h2 class="reel__year">
+      <span>2</span><span class="reel__o"><img src="media/img/autophg.webp" alt=""></span><span>2</span><span class="hot">6</span>
+    </h2>
+    <span class="reel__word">REEL</span>
+    <span class="reel__sig" aria-hidden="true">PHG!</span>
+    <img class="reel__bolt" src="media/img/bolt-red.webp" alt="">
+    <button class="play" id="playReel" type="button" aria-label="เปิดดู Reel พร้อมเสียง">
+      <span class="play__tri"></span> PLAY REEL <span class="mono">1:00</span>
+    </button>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="work__head">
+      <span class="kicker mono">02 — THE WORK</span>
+      <h2 class="h2">คลิปที่<span class="hot">ระเบิด</span>ที่สุด</h2>
+      <p class="muted">คลิปที่คนดูเยอะที่สุดบนช่อง — กดเพื่อไปดูบน YouTube</p>
+    </div>
+    <ol class="worklist" id="worklist"></ol>
+    <a class="pill pill--big" href="https://www.youtube.com/@AutoPHGx/shorts" target="_blank" rel="noopener">ดูทั้งหมดบน YouTube <span>↗</span></a>
+  </div>
+  <div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+</section>
+
+<!-- ============ TAC ============ -->
+<section class="tac" id="tac">
+  <div class="tac__bg" style="background-image:url(media/img/bg-night.webp)"></div>
+  <div class="wrap">
+    <span class="kicker mono">03 — THE SQUAD</span>
+    <div class="tac__top">
+      <img class="tac__logo reveal" src="media/img/tac.webp" alt="โลโก้กลุ่ม TAC">
+      <div class="reveal">
+        <h2 class="h2">เราไม่ได้ทำ<br>คนเดียว</h2>
+        <p class="muted">AutoPHG, CmonXN และ Tigger รวมตัวกันเป็นกลุ่ม <b>TAC</b> — ทำคอนเทนต์ คอลแลป และป่วนไปด้วยกัน</p>
+      </div>
+    </div>
+    <div class="members">
+      <a class="member member--red reveal" href="https://www.youtube.com/@AutoPHGx" target="_blank" rel="noopener">
+        <div class="member__pic"><img src="media/img/autophg.webp" alt="AutoPHG" loading="lazy"></div>
+        <div class="member__info"><span class="mono">A</span><h3>AutoPHG</h3><p>@AutoPHGx</p></div>
+        <span class="member__go">↗</span>
+      </a>
+      <a class="member member--purple reveal" href="https://www.youtube.com/@cmonxn" target="_blank" rel="noopener">
+        <div class="member__pic"><img src="media/img/cmonxn.webp" alt="CmonXN" loading="lazy"></div>
+        <div class="member__info"><span class="mono">C</span><h3>CmonXN</h3><p>@cmonxn</p></div>
+        <span class="member__go">↗</span>
+      </a>
+      <a class="member member--orange reveal" href="https://www.youtube.com/@TiggerBetween" target="_blank" rel="noopener">
+        <div class="member__pic"><img src="media/img/tigger.webp" alt="Tigger" loading="lazy"></div>
+        <div class="member__info"><span class="mono">T</span><h3>Tigger</h3><p>@TiggerBetween</p></div>
+        <span class="member__go">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <img class="deco deco--bolt-c" src="media/img/bolt-white.webp" alt="">
+  <img class="deco deco--longstar float" src="media/img/star-long.webp" alt="">
+  <div class="wrap">
+    <span class="kicker mono">04 — LET'S COLLAB</span>
+    <h2 class="contact__big">LET'S<br><span class="hot">MAKE</span> NOISE.</h2>
+    <p class="contact__lead">รับงานรีวิวเกม โปรโมต คอลแลป และงานแอนิเมชัน Roblox — ทักมาทางเพจหรือ Discord ได้เลย</p>
+    <div class="links">
+      <a class="link link--yt" href="https://www.youtube.com/@AutoPHGx" target="_blank" rel="noopener">
+        <span class="mono">YOUTUBE</span><b>@AutoPHGx</b><i>↗</i>
+      </a>
+      <a class="link link--tt" href="https://www.tiktok.com/@autophg" target="_blank" rel="noopener">
+        <span class="mono">TIKTOK</span><b>@autophg</b><i>↗</i>
+      </a>
+      <a class="link link--lt" href="https://linktr.ee/autophg" target="_blank" rel="noopener">
+        <span class="mono">ALL LINKS · ติดต่องาน</span><b>linktr.ee/autophg</b><i>↗</i>
+      </a>
+    </div>
+  </div>
+  <footer class="foot wrap mono">
+    <span>© <span id="yr">2026</span> AUTOPHG · TAC</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="AutoPHG Reel" hidden>
+  <button class="modal__close mono" id="modalClose" type="button">CLOSE ✕</button>
+  <video id="modalVideo" src="media/video/reel.mp4" poster="media/video/reel-poster.jpg" controls playsinline preload="none"></video>
+</div>
+
+<script src="js/sparks.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
