@@ -187,7 +187,7 @@ if (finePointer) {
   addEventListener('pointerover', (e) => {
     const t = e.target; if (!t.closest) return;
     const big = t.closest('[data-cur]'), link = big ? null : t.closest('a,button,[role="button"]');
-    cur.classList.toggle('big', !!big); cur.classList.toggle('link', !!link); cur.classList.toggle('hide', !!t.closest('.modal'));
+    cur.classList.toggle('big', !!big); cur.classList.toggle('link', !!link);
     curLabel.textContent = big ? big.dataset.cur : '';
   }, { passive: true });
   addEventListener('pointerdown', () => cur.animate([{ scale: '1 1' }, { scale: '1.35 .7' }, { scale: '1 1' }], { duration: 260, easing: 'ease-out' }));
@@ -420,13 +420,7 @@ const io = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.
 $$('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
 
 /* ---------------- SHOWREEL MODAL + KEYS ---------------- */
-const modal = $('#modal'), mv = $('#modalVideo');
-function openModal() { modal.hidden = false; body.style.overflow = 'hidden'; mv.currentTime = 0; mv.muted = false; mv.play().catch(() => {}); $('#modalClose').focus(); }
-function closeModal() { mv.pause(); modal.hidden = true; body.style.overflow = ''; $('#playReel').focus(); }
-$('#playReel').addEventListener('click', openModal); $('#modalClose').addEventListener('click', closeModal);
-modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 addEventListener('keydown', (e) => {
-  if (!modal.hidden) { if (e.key === 'Escape') closeModal(); return; }
   if (curSec === 'work') { if (e.key === 'ArrowRight') goWork(work.active + 1); if (e.key === 'ArrowLeft') goWork(work.active - 1); }
   if (curSec !== 'contact') return;
   const dir = e.key === 'ArrowDown' ? 1 : e.key === 'ArrowUp' ? -1 : 0;
